@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Event_list</title>
-    <link rel="stylesheet" href="../../static/assets/styles/main.css">
-</head>
-<body class="event">
+{% extends 'base.html' %}
+{% block content %}
+{% block title %}
+    Event_list
+{% endblock %}
+
 <h1 class="evt">Event_list</h1>
 <table class="table">
     <tr>
@@ -50,8 +48,4 @@
 <div class="back">
 <button>BACK</button>
 </div>
-<footer>
-    &copy Jess. Alright Reserved
-</footer>
-</body>
-</html>
+{% endblock %}

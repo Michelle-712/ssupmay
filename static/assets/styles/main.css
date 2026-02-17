@@ -10,12 +10,12 @@ h2{
 }
 label{
     background-color: #0dcaf0;
-    display: block;
+    /*display: block;*/
     margin-top: 10px;
     color: black;
 }
 input,text area{
-    width: 100%;
+    /*width: 50%;*/
     padding: 10px;
     margin-top: 10px;
     border: 1px solid black;
@@ -63,9 +63,8 @@ td{
     text-align: center;
 }
 map{
-    width: 100%;
+    /*width: 50%;*/
     max-width: 600px;
-    margin: auto;
     border-radius: 15px;
     height: 450px;
 }
@@ -81,5 +80,11 @@ details{
     justify-content: center;display: flex;
 }
 .form{
+    /*width: 50%;*/
+}
+.carousel-item{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
 }

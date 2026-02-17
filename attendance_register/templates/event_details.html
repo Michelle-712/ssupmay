@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Event_details</title>
-    <link rel="stylesheet" href="../../static/assets/styles/main.css">
-</head>
+{% extends 'base.html' %}
+{% block content %}
+{% block title %}
+Event_details
+{% endblock %}
 <body class="details">
 <h1>Event_details</h1>
 <form>
@@ -13,13 +11,10 @@
     <label>DATE:</label>
     <input type="text"><br><br>
     <label>LOCATION:</label>
-    <input type="text">
+    <input type="text"><br><br>
     <label>DESCRIPTION:</label>
     <textarea cols="30" rows="10"></textarea>
 
 </form>
-<footer>
-    &copy Jess.Alright Reserved
-</footer>
-</body>
-</html>
+
+{% endblock %}

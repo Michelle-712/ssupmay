@@ -1,39 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="../../static/assets/styles/main.css">
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
+{% block title %}
+Home
+{% endblock %}
 <h2>WELCOME HOME</h2>
 
 
 <div class="container">
     <div class="row">
-        <div class>
+        <div class="col-md-6">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.656641223574!2d35.28203762966014!3d0.5158096906409778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101986728c90f%3A0x485aa4f9417d759!2sDaima%20Towers%20(MUPS)!5e0!3m2!1sen!2ske!4v1769603628276!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <form class="form">
-         <div>
-      <label for="exampleInputName" class="form-label">Name</label>
-      <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp"><br><br>
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"><br><br>
+         <div class="col-md-6">
+      <label>Name</label>
+      <input type="text"><br><br>
+      <label>Email address</label>
+      <input type="email"><br><br>
       <label>Description</label>
              <textarea cols="30" rows="10"></textarea>
         </div>
         </form>
-
     </div>
-
 </div>
 
-
-<script src="../../static/assets/styles/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
-
-<footer>
-    &copy Jess.Alright reserved
-</footer>
-</body>
-</html>
+{% endblock %}
